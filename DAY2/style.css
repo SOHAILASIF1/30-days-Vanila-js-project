@@ -1,0 +1,24 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#background{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+p{
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+
+
+}
+#span{
+    font-size: 20px;
+    
+}
