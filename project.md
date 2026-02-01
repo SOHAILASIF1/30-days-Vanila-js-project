@@ -120,3 +120,5 @@ Login / Signup (fake data)
 Day 30
 👉 Mini Project of Your Choice
 (Next.js prep ke liye)
+
+https://streak-stats.demolab.com?

@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+     width: 100vw;
+    height: 100vh;
+   
+
+}
+input{
+    padding: 10px;
+    background-color: #234eaf;
+    color: white;
+    font-weight: 900;
+}
+button{
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #ff234f;
+   
+}
