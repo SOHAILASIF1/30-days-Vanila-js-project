@@ -1,0 +1,76 @@
+/* Reset + base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Game container */
+body > div,
+input,
+button {
+    display: block;
+}
+
+input {
+    width: 260px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Button */
+button {
+    width: 260px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #ff9800;
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+    background: #ffc107;
+    transform: scale(1.05);
+}
+
+/* Status box */
+div {
+    margin-top: 25px;
+    width: 260px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+}
+
+/* Game text */
+#gamestatus {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#life {
+    font-size: 0.95rem;
+    color: #ffeb3b;
+}
