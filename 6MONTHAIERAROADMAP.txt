@@ -1,0 +1,230 @@
+Bilkul 👍 ab **clear, step-by-step SOURCES** bata raha hoon — **kis cheez ke liye, kahan se parhna hai**.
+Random nahi, **tested + AI-era relevant** sources hain.
+
+---
+
+# 📌 COMPLETE LEARNING SOURCES (One by One)
+
+## 🐍 1️⃣ Python (Developer-focused)
+
+**Yahan se parho:**
+
+### ✅ FREE (Best)
+
+* **freeCodeCamp – Python for Developers**
+
+  * YouTube channel: *freeCodeCamp.org*
+  * Search karo:
+    👉 `Python for Developers freeCodeCamp`
+
+### ✅ PAID (Agar afford kar sako)
+
+* **Udemy**
+
+  * Course: *Python for Developers*
+  * Instructor: Top rated (4.6+)
+
+👉 Goal:
+
+* Python syntax
+* Functions
+* APIs call karna
+* Files + automation
+
+---
+
+## ⚡ 2️⃣ FastAPI (Backend for AI apps)
+
+**Yeh bohot important hai**
+
+### ✅ BEST SOURCE
+
+* **FastAPI Official Docs**
+
+  * Search: `FastAPI documentation`
+  * Section: *Tutorial*
+
+### ✅ VIDEO
+
+* **freeCodeCamp – FastAPI Full Course**
+
+  * YouTube: `FastAPI full course freeCodeCamp`
+
+👉 Goal:
+
+* APIs banana
+* AI models ko serve karna
+* Frontend se connect karna
+
+---
+
+## 🤖 3️⃣ AI / ChatGPT / LLMs (CORE PART)
+
+Yahan se **serious AI dev bante hain**
+
+### ✅ MUST-DO (FREE)
+
+* **DeepLearning.AI**
+
+  * Course 1: *ChatGPT Prompt Engineering for Developers*
+  * Course 2: *Building Systems with the ChatGPT API*
+
+📌 Platform:
+
+* `deeplearning.ai`
+* Ya Coursera (FREE audit mode)
+
+👉 Is se tum:
+
+* AI ko sahi prompt dena
+* AI APIs integrate karna
+* Real apps banana seekhoge
+
+---
+
+## 🧠 4️⃣ LangChain + RAG
+
+(Advanced AI — yahan competition kam hota hai)
+
+### ✅ PRIMARY
+
+* **LangChain Official Docs**
+
+  * Search: `LangChain documentation`
+  * Sections:
+
+    * Getting Started
+    * RAG
+
+### ✅ VIDEO
+
+* freeCodeCamp:
+
+  * Search: `RAG from scratch freeCodeCamp`
+
+👉 Goal:
+
+* Company data se chatbot
+* PDFs / docs se Q&A bot
+
+---
+
+## 🌐 5️⃣ Next.js + TypeScript (Frontend survives AI)
+
+Tum MERN dev ho → bas upgrade karo.
+
+### ✅ Next.js
+
+* **Next.js Official Docs**
+
+  * Focus: *App Router*
+
+### ✅ TypeScript
+
+* **TypeScript Handbook (Official)**
+
+  * Search: `TypeScript handbook`
+
+### ✅ YouTube (Optional)
+
+* **JavaScript Mastery**
+* **Theo (t3.gg)**
+
+👉 Avoid:
+❌ Old pages router
+❌ 2021 courses
+
+---
+
+## 🗄️ 6️⃣ SQL + PostgreSQL
+
+AI apps = data apps
+
+### ✅ SQL
+
+* **Mode SQL Tutorial**
+
+  * Website: `mode.com/sql-tutorial`
+
+### ✅ PostgreSQL
+
+* **PostgreSQL Official Docs (Basics)**
+
+👉 Focus:
+
+* JOINs
+* Indexes
+* Optimization
+
+---
+
+## 💳 7️⃣ SaaS (Auth + Payments)
+
+Yahan courses waste hain → **docs best hain**
+
+### ✅ Auth
+
+* **Clerk Docs**
+
+  * Search: `Clerk authentication docs`
+
+### ✅ Payments
+
+* **Stripe Docs**
+
+  * Search: `Stripe payments docs`
+
+---
+
+## 🚀 8️⃣ Deployment + DevOps (Basic)
+
+### ✅ Docker
+
+* **Fireship**
+
+  * Video: `Docker in 100 seconds`
+
+### ✅ Deployment
+
+* **Vercel** → Frontend
+* **Render** → Backend
+
+---
+
+# 🧩 STUDY STRATEGY (IMPORTANT)
+
+### ❌ Galti jo log karte hain
+
+* 10 courses ikathay
+* Sirf videos dekhna
+* Notes banatay rehna
+
+### ✅ Sahi tareeqa
+
+**1 topic → 1 mini project**
+
+Example:
+
+* Python seekha → AI text tool banao
+* FastAPI seekha → API bana do
+* LangChain seekha → chatbot bana do
+
+---
+
+## ⏱️ Daily Routine (2–3 hrs)
+
+* 45 min learning
+* 1.5 hr coding
+* 15 min GitHub push
+
+---
+
+## 🔥 Agar chaho to mai:
+
+* 📅 **Daily timetable bana doon**
+* 📚 **Exact YouTube links de doon**
+* 🧠 **Beginner → Advanced project ideas**
+* 💼 **Freelance gigs + proposal samples**
+
+Bas batao:
+👉 **Daily timetable chahiye ya exact links?**
