@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👉 Quiz App MCQs + score calculate</title>
+   <style>
+    body{
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #app{
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        width: 400px;
+        text-align: center;
+    }
+    #options button{
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    #options button:hover{
+        background-color: #0056b3;
+    }
+
+   </style>
+</head>
+<body>
+    <div id="app">
+        <h1>Quiz App</h1>
+        <div id="question-container">
+            <p id="question">/p>
+            <div id="options">
+                
+            </div>
+        </div>
+        <button id="next-btn">Next</button>
+        <p id="score"></p>
+
+
+
+
+
+
+
+   <script>
+const questions = [
+    {
+        question: "Where is Karachi located?",
+        options: ["Pakistan", "India", "Bangladesh", "Sri Lanka"],
+        answer: 0
+    },
+    {
+        question: "What is the capital of France?",
+        options: ["Berlin", "Madrid", "Paris", "Rome"],
+        answer: 2
+    },
+    {
+        question: "Which planet is known as the Red Planet?",
+        options: ["Earth", "Mars", "Jupiter", "Saturn"],
+        answer: 1
+    }]
+let currentQuestionIndex = 0;
+let score = 0;
+const questionEl = document.getElementById('question');
+const optionsEl = document.getElementById('options');
+const nextBtn = document.getElementById('next-btn');
+const scoreEl = document.getElementById('score');
+function loadQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    questionEl.textContent = currentQuestion.question;
+    optionsEl.innerHTML = '';
+    currentQuestion.options.forEach((option, index) => {
+        const button = document.createElement('button');
+        button.textContent = option;
+        button.addEventListener('click', () => selectOption(index));
+        optionsEl.appendChild(button);
+    });
+}
+function selectOption(selectedIndex) {
+    const currentQuestion = questions[currentQuestionIndex];
+    if (selectedIndex === currentQuestion.answer) {
+        score++;
+    }
+    nextBtn.style.display = 'block'; }
+nextBtn.addEventListener('click', () => {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        loadQuestion();
+        nextBtn.style.display = 'none';
+    } else {
+        questionEl.textContent = "Quiz Completed!";
+        optionsEl.innerHTML = '';
+        scoreEl.textContent = `Your Score: ${score}/${questions.length}`;
+         nextBtn.style.display = 'none'
+    }
+});
+loadQuestion();
+
+   </script>
+</body>
+</html>
