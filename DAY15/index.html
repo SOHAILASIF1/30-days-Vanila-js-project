@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+   <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #141e30, #243b55);
+        color: white;
+    }
+
+    div {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px 50px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+
+    #textContent {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        letter-spacing: 3px;
+    }
+
+    button {
+        padding: 12px 25px;
+        margin: 0 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    #start {
+        background: #4CAF50;
+        color: white;
+    }
+
+    #start:hover {
+        background: #43a047;
+        transform: scale(1.05);
+    }
+
+    #stop {
+        background: #f44336;
+        color: white;
+    }
+
+    #stop:hover {
+        background: #e53935;
+        transform: scale(1.05);
+    }
+
+    button:active {
+        transform: scale(0.95);
+    }
+</style>
+
+</head>
+<body>
+
+    <div>
+        <h1>Stopwatch</h1>
+        <p id="textContent">00:00:00</p>
+        <button id="start">
+            Start
+
+        </button>
+        <button id="stop">
+            Stop
+        </button>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
