@@ -94,6 +94,8 @@ function selectOption(selectedIndex) {
     const currentQuestion = questions[currentQuestionIndex];
     if (selectedIndex === currentQuestion.answer) {
         score++;
+        console.log(score);
+        
     }
     nextBtn.style.display = 'block'; }
 nextBtn.addEventListener('click', () => {

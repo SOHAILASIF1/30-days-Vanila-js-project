@@ -116,7 +116,9 @@ Day 28
 Day 29
 👉 Authentication UI
 Login / Signup (fake data)
+ 
 
+ hi
 Day 30
 👉 Mini Project of Your Choice
 (Next.js prep ke liye)
