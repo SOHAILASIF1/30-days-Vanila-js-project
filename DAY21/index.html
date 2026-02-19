@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Catch The Falling Ball</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .game-container {
+      position: relative;
+      width: 400px;
+      height: 600px;
+      background: #222;
+      border: 3px solid #00ffcc;
+      overflow: hidden;
+    }
+
+    .ball {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: red;
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .basket {
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      background: #00ffcc;
+      bottom: 10px;
+      left: 150px;
+      border-radius: 5px;
+    }
+
+    .score {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 18px;
+    }
+
+    .game-over {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 28px;
+      display: none;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="game-container">
+
+    <div class="score">Score: 0</div>
+
+    <div class="ball"></div>
+
+    <div class="basket"></div>
+
+    <div class="game-over">Game Over</div>
+
+  </div>
+
+
+
+  <script>
+  const ball = document.querySelector(".ball");
+  const basket = document.querySelector(".basket");
+  const scoreDisplay = document.querySelector(".score");
+  const gameOverText = document.querySelector(".game-over");
+
+  const gameContainer = document.querySelector(".game-container");
+
+  let ballX = Math.random() * 370; // random start
+  let ballY = 0;
+  let basketX = 150;
+  let score = 0;
+  let speed = 3;
+  let gameOver = false;
+
+  function update() {
+    if (gameOver) return;
+
+    ballY += speed;
+    ball.style.top = ballY + "px";
+    ball.style.left = ballX + "px";
+
+    // Collision Check
+    if (ballY >= 550) {
+      if (ballX > basketX && ballX < basketX + 100) {
+        score++;
+        scoreDisplay.innerText = "Score: " + score;
+
+        // Reset ball
+        ballY = 0;
+        ballX = Math.random() * 370;
+      } else {
+        gameOver = true;
+        gameOverText.style.display = "block";
+      }
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  // Keyboard Control
+  document.addEventListener("keydown", function (e) {
+    if (gameOver) return;
+
+    if (e.key === "ArrowLeft" && basketX > 0) {
+      basketX -= 20;
+    }
+
+    if (e.key === "ArrowRight" && basketX < 300) {
+      basketX += 20;
+    }
+
+    basket.style.left = basketX + "px";
+  });
+
+  update();
+</script>
+
+
+</body>
+</html>
