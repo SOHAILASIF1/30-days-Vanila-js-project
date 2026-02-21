@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagination System</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 8px;
+      border: 1px solid #ddd;
+      margin: 5px auto;
+      width: 200px;
+    }
+
+    button {
+      padding: 8px 15px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Pagination System</h2>
+
+  <ul id="list"></ul>
+
+  <button id="prev">Prev</button>
+  <span id="pageInfo"></span>
+  <button id="next">Next</button>
+
+  <script>
+    // Dummy Data (50 items)
+    let data=[]
+    for (let index = 0; index <=50; index++) {
+        data.push("Items"+1)
+        
+    }
+    let itemsPerPage=10
+    let currPage=1
+
+    let totalPages=Math.ceil(data.length/itemsPerPage)
+     const list = document.getElementById("list");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+    const pageInfo = document.getElementById("pageInfo");
+
+    function displayData() {
+        list.innerHTML=""
+
+        let startInd=(currPage-1)*itemsPerPage
+        let endInd=startInd+itemsPerPage
+        let Paginated=data.slice(startInd,endInd)
+     
+        Paginated.forEach(item=>{
+            let elemeny=document.createElement("li")
+            elemeny.textContent=item
+            list.appendChild(elemeny)
+        })
+        pageInfo.textContent=`Page ${currPage} of ${totalPages}`
+        nextBtn.disabled=currPage===totalPages
+        prevBtn.disabled=currPage===1
+        
+        
+    }
+    nextBtn.addEventListener("click",()=>{
+        if (currPage<totalPages) {
+            currPage++
+            displayData()
+            
+        }
+    })
+       prevBtn.addEventListener("click",()=>{
+        if (currPage>1) {
+            currPage--
+            displayData()
+            
+        }
+    })
+    displayData()
+    
+   
+    
+
+   
+   
+       
+   
+
+  </script>
+
+</body>
+</html>
